@@ -18,7 +18,7 @@ resource "aws_route53_record" "frontend" {
   name    = "frontend-dev.devopspractice.info"
   type    = "A"
   ttl     = 30
-  records = [aws_instance.frontend.privare_ip]
+  records = [aws_instance.frontend.private_ip]
 }
 
 
@@ -37,7 +37,7 @@ resource "aws_route53_record" "mysql" {
   name    = "mysql-dev.devopspractice.info"
   type    = "A"
   ttl     = 30
-  records = [aws_instance.mysql.privare_ip]
+  records = [aws_instance.mysql.private_ip]
 }
 
 resource "aws_instance" "catalogue" {
@@ -54,7 +54,7 @@ resource "aws_route53_record" "catalogue" {
   name    = "catalogue-dev.devopspractice.info"
   type    = "A"
   ttl     = 30
-  records = [aws_instance.catalogue.privare_ip]
+  records = [aws_instance.catalogue.private_ip]
 }
 
 
@@ -73,7 +73,7 @@ resource "aws_route53_record" "redis" {
   name    = "redis-dev.devopspractice.info"
   type    = "A"
   ttl     = 30
-  records = [aws_instance.redis.privare_ip]
+  records = [aws_instance.redis.private_ip]
 }
 resource "aws_instance" "user" {
   ami                    = "ami-08b5b3a93ed654d19"
@@ -90,7 +90,7 @@ resource "aws_route53_record" "user" {
   name    = "user-dev.devopspractice.info"
   type    = "A"
   ttl     = 30
-  records = [aws_instance.user.privare_ip]
+  records = [aws_instance.user.private_ip]
 }
 resource "aws_instance" "cart" {
   ami                    = "ami-08b5b3a93ed654d19"
@@ -107,7 +107,7 @@ resource "aws_route53_record" "cart" {
   name    = "cart-dev.devopspractice.info"
   type    = "A"
   ttl     = 30
-  records = [aws_instance.cart.privare_ip]
+  records = [aws_instance.cart.private_ip]
 }
 resource "aws_instance" "mongodb" {
   ami                    = "ami-08b5b3a93ed654d19"
@@ -124,7 +124,7 @@ resource "aws_route53_record" "mongodb" {
   name    = "mongodb-dev.devopspractice.info"
   type    = "A"
   ttl     = 30
-  records = [aws_instance.mongodb.privare_ip]
+  records = [aws_instance.mongodb.private_ip]
 }
 resource "aws_instance" "shipping" {
   ami                    = "ami-08b5b3a93ed654d19"
@@ -141,7 +141,7 @@ resource "aws_route53_record" "shipping" {
   name    = "shipping-dev.devopspractice.info"
   type    = "A"
   ttl     = 30
-  records = [aws_instance.shipping.privare_ip]
+  records = [aws_instance.shipping.private_ip]
 }
 
 resource "aws_instance" "rabbitmq" {
@@ -160,7 +160,7 @@ resource "aws_route53_record" "rabbitmq" {
   name    = "rabbitmq-dev.devopspractice.info"
   type    = "A"
   ttl     = 30
-  records = [aws_instance.rabbitmq.privare_ip]
+  records = [aws_instance.rabbitmq.private_ip]
 }
 resource "aws_instance" "payment" {
   ami                    = "ami-08b5b3a93ed654d19"
@@ -178,7 +178,7 @@ resource "aws_route53_record" "payment" {
   name    = "payment-dev.devopspractice.info"
   type    = "A"
   ttl     = 30
-  records = [aws_instance.payment.privare_ip]
+  records = [aws_instance.payment.private_ip]
 }
 resource "aws_instance" "dispatch" {
   ami                    = "ami-08b5b3a93ed654d19"
@@ -195,5 +195,5 @@ resource "aws_route53_record" "dispatch" {
   name    = "dispatch-dev.devopspractice.info"
   type    = "A"
   ttl     = 30
-  records = [aws_instance.dispatch.privare_ip]
+  records = [aws_instance.dispatch.private_ip]
 }
