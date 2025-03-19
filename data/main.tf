@@ -6,7 +6,7 @@ provider "aws" {
 resource "aws_instance" "test" {
   ami                    = "ami-08b5b3a93ed654d19"
   instance_type          = "t2.micro"
-  vpc_security_group_ids = ["data.aws_security_group.sd.id"]
+  vpc_security_group_ids = ["data.aws_security_group.sg.id"]
 
   tags = {
     Name = "Test Server"
